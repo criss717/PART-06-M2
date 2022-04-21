@@ -1,0 +1,36 @@
+html {
+    color:blueviolet;
+    font-size: 18px;
+}
+
+#contenedor {
+    display: flex;
+}
+
+#p1 {
+    color: aqua;
+    font-size: large;
+}
+
+.div {
+    height: 400px;
+    width: 500px;
+    border:1px solid blue;
+    background: aquamarine;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+#green {
+    background-color: green;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}

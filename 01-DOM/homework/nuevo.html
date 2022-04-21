@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title> Esto es una prueba</title>
+        <link rel="stylesheet" href="estilos.css">
+        <style> 
+       /* h2 {
+            color:red;
+            font-size: 15px;
+        } */
+        
+        </style>
+    </head>
+    <body>
+        <p id="p1">parrafo</p>
+        <p> parrafo 2</p>
+        <span> esto es Span</span>
+        <span> esto es Span 2</span>
+        <div class="div" id="contenedor"> 
+            <div class="box" id="red">  1</div> 
+            <div class="box" id="blue">  2</div> 
+            <div class="box" id="green">  3</div> 
+        </div>
+        <a href="http://www.soyhenry.com">esto es un link</a>
+        <h1 style= "color:blue"> Title 1</h1>
+        <h2> Title 2</h2>
+        <h6> Title 6</h6>
+        <ul>
+            <h3> Lista</h3>
+            <li>
+                <p> elemento 1</p>
+            </li>
+            <li>
+                <span> elemento 2</span>
+            </li>
+        </ul>
+
+        <script>
+            let allboxes=document.querySelectorAll(".box");
+            for (let i = 0; i < allboxes.length; i++) {
+                // allboxes[i].innerText+="!";
+                allboxes[i].addEventListener("click",function(e) {
+                    e.target.innerText=Number(e.target.innerText) +1;
+                    if(e.target.style.backgroundColor==="gray"){
+                        allboxes[i].style.backgroundColor="purple";
+                        location.reload();
+ 
+                    } else {
+                        allboxes[i].style.backgroundColor="gray";
+                    }
+                    
+                })
+            }
+            let parrafo=document.getElementById("p1");
+            parrafo.style.backgroundColor= "green";
+
+
+        </script>
+    </body>
+
+
+</html>
