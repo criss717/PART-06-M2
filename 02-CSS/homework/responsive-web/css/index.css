@@ -179,6 +179,7 @@ nav {
   color: black;
   display: flex;
   justify-content: center;
+  background-color: #F6F6F6;
 }
 .menu {
   display: inline;
@@ -277,7 +278,7 @@ footer {
 .home .actual .actual-text .btn {
   width: fit-content;
   padding: 10px;
-  background-color: #212535;
+  background-color: #22283A;
   color: white;
   border-radius: 8px;
   font-size: small;
