@@ -64,7 +64,9 @@ app.get("/amigos/:id", function(req, res)  {
 });
 
 app.post("/amigos", (req, res) => {
-  const friend = { id: getNewId(), ...req.body };
+  const {name} = req.params;
+  let friendIndex = amigos.findIndex(friend => friend.name == name);
+  const friend = { id: getNewId(),name, ...req.body };
   amigos = [...amigos, friend];
   res.status(201).json(amigos);
 });
